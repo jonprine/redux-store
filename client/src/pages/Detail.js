@@ -87,7 +87,7 @@ function Detail() {
     idbPromise("cart", "delete", { ...currentProduct });
   };
 
-  use useEffect(() => {
+  useEffect(() => {
     if (products.length) {
       setCurrentProduct(products.find(product => product.id === id));
     }
