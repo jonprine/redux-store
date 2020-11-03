@@ -87,29 +87,6 @@ function Detail() {
     idbPromise("cart", "delete", { ...currentProduct });
   };
 
-  useEffect(() => {
-    if (products.length) {
-      setCurrentProduct(products.find(product => product.id === id));
-    }
-    else if (data) {
-      dispatch({
-        type: UPDATE_PRODUCTS,
-        products: data.products
-      });
-      data.products.forEach((prodcut) => {
-        idbPromise('products', 'put', product);
-      });
-    }
-    else if (!loading) {
-      idbPromise('products', 'get').then((indexedProducts) => {
-        dispatch({
-          type: UPDATE_PRODUCTS,
-          products: indexedProducts
-        });
-      });
-    }
-  }, [products, data, loading, dispatch, id]);
-
   return (
     <>
       {currentProduct ? (
