@@ -17,11 +17,10 @@ npm install all dependencies
 Made by Jon Prine
 
 ## Heroku Link
-https://serene-falls-33864.herokuapp.com/
+https://aqueous-earth-96346.herokuapp.com/
 
 ## Screenshots of Finished Page
-![Techblog](assets/screenshot1.png)
-![Techblog](assets/screenshot2.png)
-![Techblog](assets/screenshot3.png)
-![Techblog](assets/screenshot4.png)
-![Techblog](assets/screenshot5.png)
+![Store](client/src/assets/screenshot1.png)
+![Store](client/src/assets/screenshot2.png)
+![Store](client/src/assets/screenshot3.png)
+![Store](client/src/assets/screenshot4.png)
